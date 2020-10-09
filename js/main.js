@@ -26,6 +26,7 @@ $(document).ready(function(){
     $('#container').prepend(html);
   });
 
+  /*Animating the more info button. sliding, toggling and opacity*/
   $('#container').on('click','.more-info-link', function(event){
     event.preventDefault();
     $(this).parent().find('.more-info').slideToggle('slow');
@@ -36,15 +37,14 @@ $(document).ready(function(){
   });
 
   
-
-    /**$(this).parent().find('.more-info').slideToggle('slow');
-    $(this)
-      .animate({ "opacity": 0.5, "margin-left": 10 }, 150)
-      .animate({ "opacity": 1.0, "margin-left": 0 }, 150);
-  });
-*/
 /*Removing the item when the remove button is clicked*/
   $('#container').on('click','.item-remove',function(){
     $(this).parent().remove();
   });
+
+/*Performing Ajax operation */
+  $.ajax('data/item.json',function(response){
+      console.log(respone);
+  })
+
 });
