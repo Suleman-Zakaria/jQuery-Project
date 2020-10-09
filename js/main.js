@@ -13,7 +13,8 @@ $(document).ready(function(){
    html += '<img src="assets/drum.jpg"></img>';
    html += '<div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eligendi quo dolore </div>';
    html += '<div class="price">499</div>';
-   html += '<button>Add to cart</button>';
+   html += '<button class="item-add">Add to cart</button>';
+   html += '<button class="item-remove">Remove</button>';
    html += '<br/>';
    html += '<a href="#">Moreinfo</a>';
    html += '<div class="more-info">Lorem ipsum dolor sit '
@@ -23,5 +24,9 @@ $(document).ready(function(){
     /*Inserting or attching the string html to the
      container on the index page. Use prepend to insert at the begining*/
     $('#container').prepend(html);
+  });
+
+  $('#container').on('click','.item-remove',function(){
+    $(this).parent().remove();
   });
 });
