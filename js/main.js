@@ -43,8 +43,22 @@ $(document).ready(function(){
   });
 
 /*Performing Ajax operation */
-  $.ajax('data/item.json',function(response){
-      console.log(respone);
+$.ajax('data/item.json', {
+    dataType: 'json',
+    contentType: 'application/json',
+    cache: false
   })
+  .done(function(response){
+    let items = response.items;
+    items.forEach(function(item){
+      addItem(item.id, item.name, item.description, item.price, item.moreInfo);
+    });
+  })
+  .fail(function(request, errorType, errorMessage){
+    console.log(errorMessage);
+  })
+  .always(function(){
+
+  });
 
 });

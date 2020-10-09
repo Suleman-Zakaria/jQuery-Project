@@ -1,0 +1,21 @@
+{
+    "items":[{
+        "name": "Kumerica",
+        "description": "Kumerica is a mordern city with rich traditional history. Kumericans are social and outgoing",
+        "price": 499,
+        "moreInfo": "Beautiful city"
+    }, {
+        "name": "Tamale",
+        "description": "Tamale is the capital of the Northen region of Ghana. A traditional city taht can boast of many tourist places and national parks",
+         "price": 750,
+        "moreInfo": "Beautiful city"
+    }, {
+        "name": "Koforidua",
+        "description": "Lorem ipsum dolor sitamet consectetur adipisicing elit. Pariatur eligendi quo dolore",
+        "price": 265,
+        "moreInfo": "Beautiful city"
+    }
+
+
+]
+}
