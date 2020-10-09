@@ -12,17 +12,33 @@
 
 <body>
     <!Adding container for grouping items>
+    <div id="admin-container">
+
+        <!Textbox for creating new item>
+
+        <input id="input-create-item" type="text">
+         
+        <!Button for adding new item>
+        <button id="button-create-item">Add</button>
+    </div>
     <div id="container">
-        <input type="text"
-        placeholder="Name" required></input>
-        <br/>
-        <input type="text"
-        placeholder="Last Name" required></input>
-        <br/>
-        <input type="text"
-        placeholder="E-mail"></input>
-        <br/>
-        <button>Submit</button>
+        <div class="item">
+            <div class="name">Kumerica</div>
+            <img src="assets/drum.jpg"></img>
+            <div class="description">Lorem ipsum dolor sit 
+                amet consectetur adipisicing elit. Pariatur 
+                rerum iure suscipit recusandae praesentium 
+                eum placeat officia nihil temporibus qui et,
+                 hic eligendi quo dolore laborum adipisci 
+                 eaque deserunt alias?</div>
+            <div class="price">499</div>
+            <button>Add to cart</button>
+            <br/>
+            <a href="#">Moreinfo</a>
+            <div class="more-info">Lorem ipsum dolor sit 
+                amet</div>
+
+        </div>
     </div>
 </body>
 </html>

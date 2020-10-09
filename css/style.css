@@ -1,11 +1,33 @@
-.highlight-solid{
-    color: tomato;
+/*Styling the background color of the body*/
+body {
+    background-color: #EEE;
 }
 
-.highlight-non-solid{
-    color: blue;
+/*Setting the background color for the container*/
+#container {
+    background-color: #FFFF;
+    padding: 12px;
+    margin: 12px;
+    height: 100%;
 }
 
-.highlight{
-    background-color: #FF0;
+.item {
+    width: 200px;
+    background-color: #DDD;
+    padding: 8px;
+    float: left; /*Displays the new item to the right of the old ones*/
+    margin: 4px; /*Creates a margin between the items*/
+}
+
+.item img {
+    width: 90%;
+}
+
+.item .name{
+    font-size: 24px;
+}
+
+.item .price {
+    margin-top: 8px;
+    margin-bottom: 8px;
 }

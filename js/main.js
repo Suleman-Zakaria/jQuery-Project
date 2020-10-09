@@ -1,17 +1,27 @@
-//console.log("Hello world");
-/*$(document).ready(function(){
-  console.log("Are you ready?"); 
-  //console.log($(document));
-  $('body').text("Hello word");
-  $('body').html('<strong>I am good to go.</strong>')
-});
+
 $(document).ready(function(){
-    $('.solid').addClass('highlight-solid');
-});
-$(document).ready(function(){
-    $('.non-solid').addClass('highlight-non-solid');
-});*/
-$(document).ready(function(){
-    /*Selection of the id: container, name ; input with feature: required*/
-    $('#container input:required').addClass('highlight')
+    // handling the click event
+   $('#button-create-item').on('click',function(
+   ){
+     let name=$('#input-create-item').val(); //Save the input text as name
+       console.log(name);
+       $('#input-create-item').val(''); //Clear the textbox after saving input
+   
+   let html= '';
+   html += '<div class="item">';
+   html += '<div class="name">'+ name +'</div>';
+   html += '<img src="assets/drum.jpg"></img>';
+   html += '<div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eligendi quo dolore </div>';
+   html += '<div class="price">499</div>';
+   html += '<button>Add to cart</button>';
+   html += '<br/>';
+   html += '<a href="#">Moreinfo</a>';
+   html += '<div class="more-info">Lorem ipsum dolor sit '
+   html += 'amet</div>';
+   html += '</div>';
+
+    /*Inserting or attching the string html to the
+     container on the index page. Use prepend to insert at the begining*/
+    $('#container').prepend(html);
+  });
 });
