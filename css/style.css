@@ -30,3 +30,8 @@ body {
     margin-top: 8px;
     margin-bottom: 8px;
 }
+
+/*Hidding the more info at the start of the page*/
+.item .more-info {
+    display: none;
+}

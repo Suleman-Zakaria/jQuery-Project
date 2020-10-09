@@ -26,6 +26,18 @@ $(document).ready(function(){
     $('#container').prepend(html);
   });
 
+  $('#container').on('click','.more-info-link', function(event){
+    event.preventDefault();
+    $(this).parent().find('.more-info').toggle();
+  });
+
+    /**$(this).parent().find('.more-info').slideToggle('slow');
+    $(this)
+      .animate({ "opacity": 0.5, "margin-left": 10 }, 150)
+      .animate({ "opacity": 1.0, "margin-left": 0 }, 150);
+  });
+*/
+/*Removing the item when the remove button is clicked*/
   $('#container').on('click','.item-remove',function(){
     $(this).parent().remove();
   });
