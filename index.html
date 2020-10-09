@@ -1,44 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Try jQuery</title>
-
+<html>
+  <head>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
+  </head>
+  <body>
+      <!Initializing the value of items in cart>
 
-<body>
-    <!Adding container for grouping items>
-    <div id="admin-container">
-
-        <!Textbox for creating new item>
-
-        <input id="input-create-item" type="text">
-         
-        <!Button for adding new item>
-        <button id="button-create-item">Add</button>
+    <div id="cart-container">
+      $0
+    </div>
+    <!Collecting the user's data>
+    
+    <div id="user-data">
+      <form id="cart-form" method="post" action="data/cartSubmit.json">
+        <br/>
+        <label>Name</label>
+        <input name="name" type="text"></input>
+        <br/>
+        <label>Email</label>
+        <input name="email" type="text"></input>
+        <br/>
+        <label>Newsletter?</label>
+        <input name="wantNewsletter" id="newsletter-checkbox" checked type="checkbox"></input>
+        <br/>
+        <select name="newsletterFrequency" id="newsletter-frequency">
+          <option>-</option>
+          <option selected>Weekly</option>
+          <option>Monthly</option>
+        </select>
+        <br/>
+        <button id="submit-cart">Submit</button>
+      </form>
+      <div id="feedback-message"></div>
     </div>
     <div id="container">
-        <div class="item">
-            <div class="name">Kumerica</div>
-            <img src="assets/drum.jpg"></img>
-            <div class="description">Lorem ipsum dolor sit 
-                amet consectetur adipisicing elit. 
-                Pariatur eligendi quo dolore 
-            </div>
-            <div class="price">499</div>
-            <button class="item-add">Add to cart</button>
-            <button class="item-remove">Remove</button>
-            <br/>
-            <a class="more-info-link" href="#">Moreinfo</a>
-            <div class="more-info">Lorem ipsum dolor sit 
-                amet</div>
-
-        </div>
-        <br style='clear:left;'/>
+      <br style="clear: left;" />
     </div>
-</body>
+  </body>
 </html>
