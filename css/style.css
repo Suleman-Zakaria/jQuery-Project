@@ -5,3 +5,7 @@
 .highlight-non-solid{
     color: blue;
 }
+
+.highlight{
+    background-color: #FF0;
+}
