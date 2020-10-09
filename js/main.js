@@ -6,5 +6,8 @@
   $('body').html('<strong>I am good to go.</strong>')
 });*/
 $(document).ready(function(){
-    $('#fire').addClass('highlight');
+    $('.solid').addClass('highlight-solid');
+});
+$(document).ready(function(){
+    $('.non-solid').addClass('highlight-non-solid');
 });

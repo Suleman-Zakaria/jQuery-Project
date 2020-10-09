@@ -1,3 +1,7 @@
-.highlight{
+.highlight-solid{
     color: tomato;
+}
+
+.highlight-non-solid{
+    color: blue;
 }
