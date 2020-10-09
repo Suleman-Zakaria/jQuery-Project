@@ -5,3 +5,6 @@
   $('body').text("Hello word");
   $('body').html('<strong>I am good to go.</strong>')
 });*/
+$(document).ready(function(){
+    $('#fire').addClass('highlight');
+});
