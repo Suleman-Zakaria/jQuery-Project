@@ -1,13 +1,5 @@
-
-$(document).ready(function(){
-    // handling the click event
-   $('#button-create-item').on('click',function(
-   ){
-     let name=$('#input-create-item').val(); //Save the input text as name
-       console.log(name);
-       $('#input-create-item').val(''); //Clear the textbox after saving input
-   
-   let html= '';
+function addItem(name, description, price, moreIfo){
+    let html= '';
    html += '<div class="item">';
    html += '<div class="name">'+ name +'</div>';
    html += '<img src="assets/drum.jpg"></img>';
@@ -21,9 +13,22 @@ $(document).ready(function(){
    html += 'amet</div>';
    html += '</div>';
 
-    /*Inserting or attching the string html to the
+   /*Inserting or attching the string html to the
      container on the index page. Use prepend to insert at the begining*/
-    $('#container').prepend(html);
+   $('#container').prepend(html);
+}
+$(document).ready(function(){ 
+    // handling the click event
+   $('#button-create-item').on('click',function(
+   ){
+     let name=$('#input-create-item').val(); //Save the input text as name
+       console.log(name);
+       $('#input-create-item').val(''); //Clear the textbox after saving input
+   
+   
+
+    
+    
   });
 
   /*Animating the more info button. sliding, toggling and opacity*/
