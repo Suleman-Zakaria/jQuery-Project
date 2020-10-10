@@ -70,3 +70,7 @@ $.ajax('data/item.json', {
   });
 
 });
+
+/*Most of this code was adopted from 
+https://www.udemy.com/course/complete-jquery-and-ajax-programming-curriculum/learn/lecture/10717820#overview
+*/
