@@ -1,15 +1,18 @@
+// The value of items in cart
+var cart = 0;
+
 function addItem(name, description, price, moreIfo){
     let html= '';
    html += '<div class="item">';
    html += '<div class="name">'+ name +'</div>';
    html += '<img src="assets/drum.jpg"></img>';
-   html += '<div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eligendi quo dolore </div>';
+   html += '<div class="description">Kumasi is beatiful city with diverse people from different cultural background </div>';
    html += '<div class="price">499</div>';
    html += '<button class="item-add">Add to cart</button>';
    html += '<button class="item-remove">Remove</button>';
    html += '<br/>';
    html += '<a class="more-info-link" href="#">Moreinfo</a>';
-   html += '<div class="more-info">Lorem ipsum dolor sit '
+   html += '<div class="more-info">Visit kumasi '
    html += 'amet</div>';
    html += '</div>';
 
